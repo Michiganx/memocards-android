@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">memo3</string>
+    <string name="password.input">Password</string>
+    <string name="email.input">Email</string>
+    <string name="login.button.text">Login</string>
+    <string name="left.button.text"> &lt; Туда</string>
+    <string name="right.button.text"> Сюда &gt; </string>
+</resources>

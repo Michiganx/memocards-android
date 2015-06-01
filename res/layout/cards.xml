@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/main_activity_root_outside" android:onClick="onLeftClick">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/left.button.text"
+            android:id="@+id/button_left"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/main_activity_root" android:onClick="onLeftClick">
+
+    <RelativeLayout
+            android:id="@+id/main_activity_card_face"
+            android:layout_width="300dp"
+            android:layout_height="407dp"
+            android:background="@android:color/holo_green_light"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onCardClick"
+            android:padding="5dp" >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="SIDEA"
+                android:id="@+id/textView3" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/main_activity_card_back"
+            android:layout_width="300dp"
+            android:layout_height="407dp"
+            android:background="@android:color/holo_green_dark"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onCardClick"
+            android:visibility="gone" >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="SIDEB"
+                android:id="@+id/textView4" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/right.button.text"
+            android:id="@+id/button_right" android:layout_gravity="right" android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" android:onClick="onRightClick"/>
+</RelativeLayout>
